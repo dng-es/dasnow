@@ -1,7 +1,7 @@
 dasnow
 =============
 
-Javascript plugin, snow curtain.
+Javascript plugin, create a snow curtain.
 
 
 USAGE: include dasnow.js in header section.

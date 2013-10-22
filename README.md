@@ -8,6 +8,6 @@ USAGE: just include dasnow.js in header section.
 ```html
 <html>
 <head>
-  <script src="jquery.dasnow.js"></script>
+  <script language="Javascript" src="dasnow.js"></script>
   ...
 ```

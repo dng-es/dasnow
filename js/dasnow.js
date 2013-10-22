@@ -41,15 +41,15 @@
     var obj = document.getElementsByClassName("snow"),
         numSnow = obj.length,
         current = null,
-        posicion = 0,
+        position = 0,
         snowSpeed = 1;
 
     setInterval(function(){
       for (var i = 0; i < numSnow; i++) {
         current = obj[i];
-        posicion =current.offsetTop;   
+        position = current.offsetTop;   
         snowSpeed = current.snowSpeed;         
-        current.style.top = (posicion<docHeight) ? (posicion + snowSpeed) + "px" : (0 - current.offsetHeight) + "px";
+        current.style.top = (position<docHeight) ? (position + snowSpeed) + "px" : (0 - current.offsetHeight) + "px";
       }
     },20);
   }
@@ -57,4 +57,5 @@
   window.onload = function(){
     daSnow();
   }
+  
 })();

@@ -4,7 +4,7 @@ dasnow
 Javascript plugin, create a snow curtain.
 
 
-USAGE: include dasnow.js in header section.
+USAGE: just include dasnow.js in header section.
 ```html
 <html>
 <head>

@@ -22,6 +22,7 @@
     element.className = "snow";
     element.id = "snow0";
     element.style.top = 0
+    element.style.borderRadius = "1em";
     document.body.appendChild(element); 
 
     //clone snow      

@@ -20,6 +20,7 @@
         cloneSnowSize = 5;
 
     element.className = "snow";
+    element.style.position = "absolute";
     element.style.top = 0
     element.style.borderRadius = "5px";
     document.body.appendChild(element); 

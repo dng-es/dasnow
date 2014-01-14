@@ -12,29 +12,27 @@
   this.daSnow = function(){
     //create first snow
     var element = document.createElement("span"),
-        docHeight = document.body.offsetHeight - 20,
-        docWidth = document.body.offsetWidth,
+        docHeight = window.innerHeight - 20,
+        docWidth = window.innerWidth,
         generalSpeed = docHeight/100;
         distance = 8,
         cloneSnow = null,
         cloneSnowSize = 5;
 
     element.className = "snow";
-    element.id = "snow0";
+    element.style.position = "absolute";
     element.style.top = 0
-    element.style.borderRadius = "1em";
+    element.style.borderRadius = "5px";
     document.body.appendChild(element); 
 
     //clone snow      
     for (var j = 1; j < (docWidth/distance); j++) {
-      cloneSnow = element.cloneNode(false);
-      cloneSnow.style.left = ((j*distance)-1) + "px";
-      cloneSnow.style.top = Math.floor(Math.random()*docHeight) + 1 + "px";
-      cloneSnow.snowSpeed = (Math.random()*generalSpeed)+1;
       cloneSnowSize = (Math.random()*4)+2 + "px";
-      cloneSnow.style.width = cloneSnowSize;
-      cloneSnow.style.height = cloneSnowSize;
-      cloneSnow.id = "snow"+ j;
+      cloneSnow = element.cloneNode(false);
+      cloneSnow.snowSpeed = (Math.random()*generalSpeed)+1;
+      cloneSnow.style.left = ((j*distance)-1) + "px";
+      cloneSnow.style.top = Math.floor(Math.random()*docHeight) + 1 + "px";    
+      cloneSnow.style.width = cloneSnow.style.height = cloneSnowSize;
       document.body.appendChild(cloneSnow);
     }
 
